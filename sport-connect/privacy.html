@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sports Connect — Privacy Policy</title>
+<title>Zelkivra — Privacy Policy</title>
 <style>
   :root { color-scheme: light dark; }
   body {
@@ -21,9 +21,9 @@
 </style>
 </head>
 <body>
-<h1>Sports Connect — Privacy Policy</h1>
+<h1>Zelkivra — Privacy Policy</h1>
 <p class="updated">Network beta · Last updated: 14 October 2026</p>
-<p>Sports Connect is published by Yuta Kodama. Davis Robinson is the support contact. The network app uses a shared service so players can organise matches, join rosters, exchange messages and run competitions across devices. This policy covers that network build and the launch website.</p>
+<p>Zelkivra is published by Yuta Kodama. Davis Robinson is the support contact. The network app uses a shared service so players can organise matches, join rosters, exchange messages and run competitions across devices. This policy covers that network build and the launch website.</p>
 
 <h2>Accounts and shared information</h2>
 <p>The service stores your account identifier, username, display name, selected sports, skill and position preferences, and organiser settings. Passwords and account-recovery codes are stored as hashes, not readable passwords or codes. Sign-in uses short-lived access tokens and rotating refresh credentials. The service stores credential hashes, expiry, session-family identifiers and refresh request identifiers, not readable tokens. The app keeps its credentials in device-only iOS Keychain storage. Access tokens last 15 minutes; refresh credentials can renew access for up to 30 days. Signing out revokes that device's session family. Password recovery, suspension and account deletion revoke all account sessions.</p>
@@ -36,13 +36,18 @@
 <h2>Location, Maps and Calendar</h2>
 <p>Your device location is used on the device to centre maps and calculate distances. When nearby discovery is used, the current search coordinates and selected radius may also be sent to the shared service to find nearby events. The supplied backend processes these coordinates for the request and does not save a device-location history. The venue address and coordinates you choose for an event are stored with that event; joining or checking in links your account to that venue. Apple Maps processes its map and venue-search requests under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
 <p>Nearby game alerts are optional. If you choose “Notify me within 10 km,” the service saves one location you selected, linked to your account, to find newly posted public games within 10 km. This area does not follow you as you move; you must explicitly replace it. Only you can retrieve your saved alert area. Turn alerts off in Profile → Settings → Nearby game alerts to delete the saved area and queued discovery alerts, or delete your account. Push delivery requires notification permission and a registered device. Alerts contain a generic notice and event reference, without your saved coordinates, venue address or other players' names/messages. Blocked organisers and private, cancelled or started matches are excluded.</p>
-<p>Calendar access is optional. The app checks clashes on the device and can add a match to your Calendar. Your calendar contents are not uploaded to the Sports Connect service. Calendar events may sync through the accounts you have configured in iOS.</p>
+<p>Calendar access is optional. The app checks clashes on the device and can add a match to your Calendar. Your calendar contents are not uploaded to the Zelkivra service. Calendar events may sync through the accounts you have configured in iOS.</p>
 
 <h2>Notifications</h2>
 <p>Match reminders can be scheduled locally. When remote notifications are configured and you allow them, the service stores an Apple push token to deliver event updates through Apple's notification service. You can turn notifications off in iOS Settings. Shared data also refreshes while the app is open.</p>
 
 <h2>Reporting and blocking</h2>
 <p>Blocks are stored with your account so they apply across devices. Reports send the selected account or content, reason and any explanation to the operator's moderation queue. The operator can review reports, remove content and suspend accounts. Do not include unnecessary private information in report text.</p>
+
+<h2>Tournament Hosting subscriptions</h2>
+<p>Tournament Hosting is an optional monthly Apple subscription for unlimited tournament creation. Joining competitions, hosting ordinary matches and creating leagues remain free. Apple handles purchases, renewal, payment details and cancellation under its own terms. The app associates the purchase with the Zelkivra account used to subscribe by sending that account's identifier to Apple as an app account token.</p>
+<p>The app sends Apple's signed transaction to the authenticated shared service. The service verifies it and checks current subscription status with Apple; it stores the original transaction reference linked to your account so access can be refreshed. It does not store card details or the raw signed transaction. This purchase information is used only to provide subscription functionality, not advertising or tracking. You can restore purchases or manage/cancel the subscription in Profile → Settings → Tournament Hosting. Use the same Zelkivra account to restore.</p>
+<p>Deleting your Zelkivra account removes its stored purchase reference but does not cancel Apple's subscription. Cancel in Apple's subscription management before deleting your account. Cancelling stops new tournament creation when access expires; existing tournaments remain available to finish.</p>
 
 <h2>Storage, deletion and sharing</h2>
 <p>The device caches authorised records for display. The shared service stores active account and event records on its hosting infrastructure. A network connection is required to confirm shared changes; a cached screen does not confirm a new join or message.</p>
