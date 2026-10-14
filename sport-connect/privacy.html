@@ -22,16 +22,16 @@
 </head>
 <body>
 <h1>Sports Connect — Privacy Policy</h1>
-<p class="updated">Network beta · Last updated: 8 October 2026</p>
+<p class="updated">Network beta · Last updated: 14 October 2026</p>
 <p>Sports Connect is published by Yuta Kodama. Davis Robinson is the support contact. The network app uses a shared service so players can organise matches, join rosters, exchange messages and run competitions across devices. This policy covers that network build and the launch website.</p>
 
 <h2>Accounts and shared information</h2>
-<p>The service stores your account identifier, username, display name, selected sports, skill and position preferences, and organiser settings. Passwords and account-recovery codes are stored as hashes, not readable passwords or codes. Signed-in sessions are protected by random tokens; the app keeps its token in the iOS Keychain.</p>
+<p>The service stores your account identifier, username, display name, selected sports, skill and position preferences, and organiser settings. Passwords and account-recovery codes are stored as hashes, not readable passwords or codes. Sign-in uses short-lived access tokens and rotating refresh credentials. The service stores credential hashes, expiry, session-family identifiers and refresh request identifiers, not readable tokens. The app keeps its credentials in device-only iOS Keychain storage. Access tokens last 15 minutes; refresh credentials can renew access for up to 30 days. Signing out revokes that device's session family. Password recovery, suspension and account deletion revoke all account sessions.</p>
 <p>The service also stores matches and venues you create or join, membership and waiting-list records, team assignments, fixtures, results, attendance and payment-status marks, group messages, blocks and support reports. These records support the app's features and account recovery on another device. The app does not process payments or collect card or bank details.</p>
 <p>Public match details are discoverable by signed-in players. Private events require an invitation. Group messages are available to authorised event members. Other members can see the profile and roster information needed to organise the event; your password, recovery code and sign-in token are never shared with them.</p>
 
 <h2>Location, Maps and Calendar</h2>
-<p>Your live device location is used on the device to centre maps and calculate distances. It is not uploaded as a location history. The venue address and coordinates you choose for an event are stored with that event; joining or checking in links your account to that venue. Apple Maps processes its map and venue-search requests under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
+<p>Your device location is used on the device to centre maps and calculate distances. When nearby discovery is used, the current search coordinates and selected radius may also be sent to the shared service to find nearby events. The supplied backend processes these coordinates for the request and does not save a device-location history. The venue address and coordinates you choose for an event are stored with that event; joining or checking in links your account to that venue. Apple Maps processes its map and venue-search requests under <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>.</p>
 <p>Calendar access is optional. The app checks clashes on the device and can add a match to your Calendar. Your calendar contents are not uploaded to the Sports Connect service. Calendar events may sync through the accounts you have configured in iOS.</p>
 
 <h2>Notifications</h2>
